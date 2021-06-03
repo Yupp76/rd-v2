@@ -1,0 +1,467 @@
+.hero-background {
+  background-image: url("../IMG/Rectangle33.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+}
+.hero-background .container {
+  display: flex;
+  height: inherit;
+  align-items: center;
+}
+.hero-background .content-wrapper {
+  display: block;
+}
+
+.hero-background .content-wrapper h1 {
+  font-style: italic;
+  font-size: 55px;
+  color: white;
+  font-weight: 800;
+}
+
+.hero-background .content-wrapper span {
+  display: block;
+}
+
+.hero-background .content-wrapper p {
+  font-size: 18px;
+  margin: 1rem 0;
+  color: white;
+  width: 70%;
+}
+
+.hero-background .content-wrapper button {
+  margin-top: 1rem;
+  background: #c0311d;
+}
+
+.flex-label {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.flex-label span {
+  margin-right: 1rem;
+}
+
+.flex-label .text {
+  font-weight: 700;
+  margin-left: 1rem;
+  color: #777777;
+}
+
+.flex-label .text:first-child {
+  margin-left: 0;
+}
+
+.flex-label .text:last-of-type {
+  color: black;
+}
+
+.select-box {
+  cursor: pointer;
+  position: relative;
+  max-width: 9rem;
+  width: 100%;
+}
+
+.mobile-menu-block form {
+  width: 9rem;
+}
+
+.mobile-menu-block .block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-menu-block .block span {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-left: 1rem;
+}
+
+.select,
+.label {
+  color: #414141;
+  display: block;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 2em;
+}
+
+.select {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 5px 0;
+  height: 40px;
+  opacity: 0;
+  background: none transparent;
+  border: 0 none;
+}
+.select-box1 {
+  background: #ffffff;
+  border: 2px solid gray;
+  border-radius: 0.5rem;
+}
+
+.label {
+  position: relative;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.open .label::after {
+  content: "▲";
+}
+.label::after {
+  content: "▼";
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px 15px;
+  border-left: 5px solid #fff;
+}
+
+.grid-of-two {
+  display: grid;
+  grid-template-columns: 1.5fr 4fr;
+  column-gap: 2.5rem;
+}
+
+.mobile-menu-block {
+  display: none;
+}
+
+.products-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+}
+
+.products-wrapper .card-image-cover {
+  width: 100%;
+  min-height: 100px;
+  max-height: 250px;
+  height: 250px;
+  background-color: darkgray;
+  object-fit: cover;
+}
+
+.products-wrapper a {
+  color: black;
+  margin-right: 10px;
+  height: fit-content;
+  text-decoration: none;
+  display: block;
+  padding: .5rem;
+  position: relative;
+}
+
+.products-wrapper a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  transition: .2s all ease;
+}
+
+.products-wrapper a:hover::after {
+  background: #0000000c;
+}
+
+.product-card img {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.product-card .product-card-footer {
+  margin-top: 1rem;
+}
+
+.product-card .product-card-footer img {
+  margin: 0;
+}
+
+.product-card h1 {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.product-card .product-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-card .product-card-footer span {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--green);
+}
+.product-card .product-card-footer ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.product-card .product-card-footer ul li {
+  margin-right: 0.5rem;
+}
+.product-card .product-card-footer ul li::last-of-type {
+  margin-right: 0;
+}
+
+.pagintation-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+ 
+.pagintation-wrapper ul {
+  list-style: none;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto 4rem;
+}
+ 
+.pagintation-wrapper ul li {
+  width: 40px;
+  height: 40px;
+  border: 1px solid darkgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-weight: 700;
+}
+ 
+.pagintation-wrapper ul li:nth-child(2) {
+  border: 1px solid var(--darkBlue);
+  background-color: var(--blue);
+  color: white;
+}
+ 
+.pagintation-wrapper ul li:nth-child(1) {
+  transform: rotateY(180deg);
+}
+
+.menu-blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.menu {
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  width: 100%;
+  height: fit-content;
+  padding: 0.5rem 0;
+  box-shadow: 0px 4px 10px #0000001c;
+  margin-bottom: 1.5rem;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  margin: 2rem;
+}
+
+.menu ul li .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu ul li .flex span {
+  display: block;
+  font-size: 16px;
+}
+
+.menu:nth-child(2) h1,
+.menu:nth-child(3) h1 {
+  margin-top: 1rem;
+  font-size: 18px;
+}
+
+.menu:nth-child(2) .checkbox-list-wrapper,
+.menu:nth-child(3) .checkbox-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  padding: 0 2rem;
+}
+.menu:nth-child(2) .checkbox-list-wrapper .checkbox-wrapper,
+.menu:nth-child(3) .checkbox-list-wrapper .checkbox-wrapper {
+  margin: 1rem 0;
+}
+.menu:nth-child(2) h1,
+.menu:nth-child(3) h1 {
+  font-size: 24px;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0 2rem;
+}
+
+/* The container */
+.box-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.box-container .label {
+  display: block;
+  font-size: 16px;
+  margin-left: 0.5rem;
+  padding-top: 2.5px;
+}
+
+/* Hide the browser's default checkbox */
+.box-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.box-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.box-container input:checked ~ .checkmark {
+  background-color: var(--green);
+  border: 3px solid var(--darkGreen);
+  margin: -3px 0 0 -3px;
+  border-radius: 6px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.box-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.box-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 1100px) {
+  .menu {
+    min-width: 300px;
+  }
+  .products-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-background {
+    margin-top: 5rem;
+    height: 350px;
+  }
+  .hero-background .content-wrapper h1 {
+    font-size: 35px;
+  }
+  .hero-background .content-wrapper p {
+    font-size: 16px;
+  }
+  .grid-of-two {
+    grid-template-columns: 1fr;
+    column-gap: none;
+  }
+  .menu-blocks {
+    display: none;
+  }
+  .mobile-menu-block {
+    margin-bottom: 1rem;
+    display: block;
+    box-shadow: 0px 5px 14px #00000030;
+  }
+  .mobile-menu-block .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero-background {
+    margin-top: 5.5rem;
+    height: 260px;
+  }
+  .hero-background .container {
+    height: 87%;
+  }
+  .hero-background .content-wrapper h1 {
+    font-size: 22px;
+  }
+  .hero-background .content-wrapper p {
+    font-size: 14px;
+    width: 90%;
+  }
+  .hero-background .content-wrapper button {
+    margin-top: 0;
+  }
+  .products-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+  .product-card img:first-child {
+    object-fit: cover;
+    height: 250px;
+    object-position: center;
+  }
+  .product-card .product-card-footer ul li img {
+    height: initial;
+  }
+}

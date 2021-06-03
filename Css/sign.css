@@ -1,0 +1,105 @@
+.section-wrapper {
+  max-width: 500px;
+  margin: 2rem auto 5rem;
+}
+
+.section-wrapper span {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 0.25rem;
+}
+
+.section-wrapper h1 {
+  color: #89dd1f;
+  font-size: 43px;
+  font-weight: 700;
+}
+
+.form-contact {
+  margin: 3rem 0 1rem;
+}
+
+.form-contact .formlabel {
+  margin-bottom: 1.5rem;
+}
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control input:checked ~ .control--indicator {
+  background: #fff;
+}
+
+.control--checkbox .control--indicator {
+  border-radius: 3px;
+}
+
+.control--indicator {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.control input:checked ~ .control--indicator:after {
+  display: block;
+}
+
+.control--checkbox .control--indicator:after {
+  left: 5px;
+  top: 0px;
+  width: 5px;
+  height: 12px;
+  border: solid #89dd1f;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.control--indicator:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.contact-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.contact-footer p {
+  font-size: 17px;
+  text-decoration: underline;
+  font-weight: 500;
+  color: var(--paragraph);
+}
+
+@media screen and (max-width: 768px) {
+  .section-wrapper {
+    margin: 7rem auto 5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contact-footer {
+    margin: 0 2rem;
+  }
+  .contact-footer p {
+    text-align: center;
+  }
+}

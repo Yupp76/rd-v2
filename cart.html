@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/styles.css" />
+    <link rel="stylesheet" href="Css/cart.css" />
+    <title>CART | RAINYDAYS</title>
+    <meta name="Description" content="This is the rainDays" />
+    <!-- Hotjar Tracking Code for https://first-school-project-jim-ree.netlify.app -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2266911, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+
+  <body>
+    <!-- Navbar starts here -->
+    <nav>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo-top">
+            <a href="/index.html">
+              <img src="/IMG/Logo.png" alt="Logo" width="150px" />
+            </a>
+          </div>
+          <div class="nav-meny">
+            <a href="/index.html">Home</a>
+            <a href="/om.html">About Us</a>
+            <a href="/product.html">Product</a>
+            <a href="/contact.html">Contact Us</a>
+          </div>
+          <div class="nav-thirdrow">
+            <a href="/sign-In.html"
+              ><img src="/IMG/Vector1.png" alt="user"
+            /></a>
+            <a href="/cart.html" class="active"
+              ><img src="/IMG/Vector2.png" alt="cart"
+            /></a>
+            <a href="/sign-up.html" class="btn -primary">Sign Up</a>
+          </div>
+          <div class="mobile-nav-btn" id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/om.html">About Us</a></li>
+              <li><a href="/product.html">Product</a></li>
+              <li><a href="/contact.html">Contact Us</a></li>
+              <li><a href="/sign-up.html">Sign Up</a></li>
+              <li><a href="/sign-In.html">Sign In</a></li>
+              <li><a href="/cart.html" class="active">Cart</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar ends here -->
+    <main class="container">
+      <div class="cart-grids">
+        <div class="cart-table-1">
+          <div class="cart-table-header">
+            <h1 class="heading-smd">Cart</h1>
+            <a href="/product.html">continue shopping</a>
+          </div>
+          <div id="cart-table-wrapper">
+            <div class="product-info">
+              <img id="prod-img" src="/IMG/card_header.png" alt="Waterproof Jacket" />
+              <div class="product-info-flex">
+                <ul class="product-info-cols">
+                  <li>
+                    <span>Name:</span>
+                    <h1 id="prod-name" class="heading-smd">Waterproof Jacket</h1>
+                  </li>
+                  <li>
+                    <span>Category:</span>
+                    <p class="paragraph">Waterproof</p>
+                  </li>
+                  <li>
+                    <span>Stock:</span>
+                    <p>In Stock</p>
+                  </li>
+                </ul>
+                <div class="amount-box">
+                  <div id="minus">-</div>
+                  <div class="amount-number">
+                    <span id="amount">1</span>
+                    <span id="amount-text">unit</span>
+                  </div>
+                  <div id="plus">+</div>
+                </div>
+                <div class="total-box">
+                  <span>Total:</span>
+                  <p>$<span id="total">0.00</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- amount number will go here-->
+        </div>
+        <div class="cart-table-2">
+          <div class="cart-calculator">
+            <a href="/sign-In.html" class="btn -primary">Checkout</a>
+            <p class="paragraph">
+              By placing your order, you agree to the
+              <a href="#">Delivery Terms</a>
+            </p>
+            <table>
+              <thead>
+                <tr class="table-header">
+                  <th>Product</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Products total</td>
+                  <td>$<span id="products-total"></span></td>
+                </tr>
+                <tr>
+                  <td>Delivery</td>
+                  <td>$<span id="delivery-total"></span></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr class="table-footer">
+                  <td>Total</td>
+                  <td>$<span id="pricing-total"></span></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- --FOOTER starts here -->
+    <footer>
+      <div class="container">
+        <div class="footer-head-container">
+          <div class="footerLogo">
+            <img src="IMG/Logofooter.png" alt="footer-logo" />
+          </div>
+          <div class="social-links-mobile">
+            <a href="#"><img src="IMG/IconFB.png" /></a>
+            <a href="#"><img src="IMG/Iconinstagram.png" /></a>
+            <a href="#"><img src="IMG/IconTwitter.png" /></a>
+            <a href="#"><img src="IMG/Icon.png" /></a>
+          </div>
+          <div class="footer-lists">
+            <ul>
+              <li>Title</li>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+            </ul>
+            <ul>
+              <li>Title</li>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+            </ul>
+            <ul>
+              <li>Title</li>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+            </ul>
+            <ul>
+              <li>Title</li>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+            </ul>
+          </div>
+          <div class="footer-bilde">
+            <img src="IMG/Image5.jpg" alt="footer-bilde" width="250px" />
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom-container">
+          <div class="footer-p">
+            <p class="paragraph">
+              Copyright © 2020 Design & Develop Jim Ree. All rights reserved
+            </p>
+          </div>
+          <div class="social-links">
+            <a href="#"><img src="IMG/IconFB.png" alt="facebook" /></a>
+            <a href="#"><img src="IMG/Iconinstagram.png" alt="instagram" /></a>
+            <a href="#"><img src="IMG/IconTwitter.png" alt="twitter" /></a>
+            <a href="#"><img src="IMG/Icon.png" alt="linkedin" /></a>
+          </div>
+          <div class="cookies">
+            <ul>
+              <li>Privacy Policy</li>
+              <li>Terms & conditions</li>
+              <li>Language</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- --FOOTER ends here -->
+    <script src="JS/common.js"></script>
+    <script src="JS/cart.js"></script>
+  </body>
+</html>
